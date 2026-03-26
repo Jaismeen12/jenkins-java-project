@@ -12,7 +12,6 @@
     <name>Java Home myweb</name>
     <url>http://maven.apache.org</url>
 
-    <!-- ✅ FIX ADDED HERE -->
     <properties>
         <docker.image.prefix>kammana</docker.image.prefix>
         <maven.compiler.source>8</maven.compiler.source>
@@ -53,5 +52,15 @@
             <url>http://repo1.maven.org/maven2</url>
         </pluginRepository>
     </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
